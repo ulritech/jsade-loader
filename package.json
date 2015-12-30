@@ -1,0 +1,32 @@
+{
+  "name": "jsade-loader",
+  "version": "0.0.1",
+  "description": "Webpack loader for transforming embedded JADE into HTML",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ulritech/jsade-loader.git"
+  },
+  "keywords": [
+    "webpack",
+    "loader",
+    "jade",
+    "html",
+    "inline",
+    "javascript",
+    "embedded",
+    "angular"
+  ],
+  "peerDependencies": {
+    "jade": "^1.x",
+  },
+  "author": "Luke Ulrich",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ulritech/jsade-loader/issues"
+  },
+  "homepage": "https://github.com/ulritech/jsade-loader#readme"
+}

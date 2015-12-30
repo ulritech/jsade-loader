@@ -1,6 +1,6 @@
 {
   "name": "jsade-loader",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Webpack loader for transforming embedded JADE into HTML",
   "main": "index.js",
   "scripts": {
@@ -21,7 +21,7 @@
     "angular"
   ],
   "peerDependencies": {
-    "jade": "^1.x",
+    "jade": "^1.x"
   },
   "author": "Luke Ulrich",
   "license": "MIT",

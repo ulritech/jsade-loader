@@ -31,5 +31,16 @@ It is important to start your Jade template string with the "`//- JSADE\n" and e
 
 You can have multiple JSADE blocks as well - just follow the convention defined above.
 
+## Sublime syntax highlighting
+Two definition files are provided for highlighting the embedded Jade:
+- JavaScript-JSade.tmLanguage: highlights Jade within regular JavaScript files (*.jsade)
+- TypeScript-JSade.tmLanguage: highlights Jade within TypeScript files (*.tsade)
+
+Save these files in the Packages/User folder (~/Library/Application Support/Sublime Text 3/Packages/User on Mac OS X) and restart Sublime Text.
+
 ## Notes
 Another pain point when writing Jade or string embedded HTML, is the lack of syntax highlighting. To deal with this scenario, I also wrote a syntax definition file for Sublime Text that performs Jade syntax highlighting of jsade-loader compatible template strings.
+
+Some [TypeScript](http://www.typescriptlang.org/) loaders such as the [awesome-typescript-loader](https://github.com/s-panferov/awesome-typescript-loader) do not work as expected out of the box. In particular, the [awesome-typescript-loader](https://github.com/s-panferov/awesome-typescript-loader) does not respect upstream loader output (such as when chained with the jsade loader). To fix this, simply use the useWebpackText option of [awesome-typescript-loader](https://github.com/s-panferov/awesome-typescript-loader).
+
+[ts-loader](https://github.com/TypeStrong/ts-loader) does not have any compatibility issues when chained with this loader.

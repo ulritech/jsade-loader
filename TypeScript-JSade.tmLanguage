@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>tsade</string>
+		<string>ts</string>
+		<string>tsx</string>
+	</array>
+	<key>name</key>
+	<string>TypeScript (JSADE)</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>begin</key>
+			<string>`//- JSADE</string>
+			<key>end</key>
+			<string>^`</string>
+			<key>name</key>
+			<string>text.jade.inline</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>text.jade</string>
+				</dict>
+			</array>
+			<key>comment</key>
+			<string>Highlight Jade string embedded in TypeScript</string>
+		</dict>
+
+		<dict>
+			<key>include</key>
+			<string>source.ts</string>
+		</dict>
+	</array>
+
+	<key>scopeName</key>
+	<string>source.ts.jsade</string>
+	<key>uuid</key>
+	<string>3FE4F42B-8AEF-43A8-98BF-A753E06F549D</string>
+</dict>
+</plist>
